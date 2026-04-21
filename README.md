@@ -59,7 +59,7 @@ These datasets were joined using a FULL OUTER JOIN on UserID to create a unified
 
 ## Key Insights
 
-- Viewership is concentrated during evening hours, indicating strong prime-time behavior  
+- Viewership is concentrated during afternoon hours, indicating strong prime-time behavior  
 - Engagement is significantly higher on weekends compared to weekdays  
 - Mid-week periods show consistently lower consumption, highlighting an opportunity for targeted intervention  
 - A small segment of users contributes a disproportionate share of total watch time  
@@ -121,15 +121,6 @@ This project was completed within one week:
 - Day 4: Exploratory analysis  
 - Day 5–6: Visualization and insight development  
 - Day 7: Final presentation and reporting  
-
----
-
-## Deliverables
-
-- Joined analytical dataset  
-- SQL queries for data preparation and analysis  
-- Excel workbook with pivot tables and visualizations  
-- Presentation summarizing insights and recommendations  
 
 ---
 
