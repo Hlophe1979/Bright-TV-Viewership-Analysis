@@ -1,129 +1,84 @@
 # BrightTV Viewership Analytics
 
-## Overview
-This project analyzes user behavior and viewership patterns for BrightTV to generate data-driven insights that support subscription growth and improved user engagement. By combining user demographic data with session-level viewing data, the analysis identifies key drivers of consumption and areas of opportunity for the Customer Value Management (CVM) team.
-
----
-
 ## Problem Statement
-BrightTV seeks to increase its subscription base and maximize user engagement. However, limited visibility into viewing behavior, content performance, and user preferences restricts the ability to make informed, targeted decisions.
+BrightTV aims to grow its subscription base but lacks clear insight into how users consume content, what drives engagement, and where usage is low.
 
 ---
 
-## Project Objective
-The objective of this project is to:
-- Analyze user and usage trends  
-- Identify factors influencing content consumption  
-- Detect engagement gaps such as drop-off and low-activity periods  
-- Provide actionable recommendations to increase viewership and subscriptions  
+## Aim
+Use data to understand user behavior and viewing patterns, and identify opportunities to increase consumption and subscriptions.
 
 ---
 
-## Data Sources
-The analysis is based on two datasets:
+## Approach
 
-1. **User Profiles**
-   - UserID, Gender, Race, Age, Province  
+### Data
+Two datasets were used:
+- **User Profiles:** demographics   
+- **Viewership:** session-level data 
 
-2. **Viewership Data**
-   - UserID, Channel, Record Date (UTC), Session Duration  
-
-These datasets were joined using a FULL OUTER JOIN on UserID to create a unified analytical dataset. Timestamps were converted from UTC to South African Standard Time for accurate temporal analysis.
+These were joined using a **FULL OUTER JOIN on UserID** to create a single dataset combining user attributes with viewing behavior.  
 
 ---
 
-## Methodology
+### Analysis
+The analysis focused on:
 
-### Data Preparation
-- Cleaned and validated both datasets  
-- Standardized column formats  
-- Converted timestamps to local time  
-- Joined datasets using SQL in Databricks  
-
-### Exploratory Data Analysis
-- Analyzed demographic distribution of users  
-- Evaluated viewing behavior across:
-  - Time of day  
-  - Day of week  
-- Assessed channel performance using session counts and average duration  
-- Measured engagement using session duration and frequency  
-- Identified drop-off using short session thresholds (<5 minutes)  
-
-### Analytical Focus Areas
-- User segmentation and engagement levels  
-- Temporal viewing patterns  
-- Content performance and retention  
-- Identification of low-consumption periods  
+- **User trends:** who is watching  
+- **Usage trends:** when and how users watch  
+- **Channel performance:** what users watch  
+- **Drop-off:** short sessions indicating low engagement  
 
 ---
 
 ## Key Insights
 
-- Viewership is concentrated during afternoon hours, indicating strong prime-time behavior  
-- Engagement is significantly higher on weekends compared to weekdays  
-- Mid-week periods show consistently lower consumption, highlighting an opportunity for targeted intervention  
-- A small segment of users contributes a disproportionate share of total watch time  
-- A high proportion of short sessions indicates user drop-off and potential content or discovery issues  
-- Some channels attract initial engagement but fail to retain viewers, suggesting weak content performance  
+- Viewership peaks in the **afternoon**, showing strong reliance on prime-time viewing  
+- **Weekends outperform weekdays**, while mid-week shows the lowest activity  
+- A small group of users drives **most of the total watch time**  
+- A high number of sessions are **under 5 minutes**, indicating drop-off  
+- Some channels attract users but have **low viewing duration**, suggesting weak retention  
 
 ---
 
 ## Drivers of Consumption
 
-The following factors were identified as key drivers of user engagement:
-
-- **Time-based behavior:** Peak usage occurs during evenings and weekends  
-- **Content performance:** Certain channels consistently outperform others in retention  
-- **User demographics:** Engagement varies across age groups, gender, and geographic regions  
-- **Content relevance:** Short sessions indicate misalignment between user expectations and content  
+Consumption is mainly influenced by:
+- **Time of day** (evenings perform best)  
+- **Day of week** (weekends vs mid-week drop)  
+- **Content performance** (some channels retain users better)  
+- **User segments** (engagement varies across demographics)  
 
 ---
 
 ## Recommendations
 
-### Increase Engagement During Low-Activity Periods
-- Introduce targeted content releases during mid-week  
-- Promote high-performing content during low-consumption periods  
-
-### Improve Content Discovery and Personalization
-- Implement personalized recommendation systems  
-- Enhance user interface to surface relevant content more effectively  
-
-### Optimize Content Strategy
-- Invest in channels and content types with high retention  
-- Review and improve underperforming content  
-
-### Grow the User Base
-- Target key demographic segments through digital marketing  
-- Leverage social media and referral programs for acquisition  
-
-### Strengthen Retention
-- Identify low-engagement users and implement re-engagement strategies  
-- Incentivize high-value users to increase loyalty and lifetime value  
+- Release and promote content during **mid-week low periods**  
+- Improve **content relevance and discovery** to reduce drop-off  
+- Focus on **high-performing channels** and improve weak ones  
+- Use **targeted marketing and social media** to grow the user base  
+- Re-engage low-activity users and retain high-value users  
 
 ---
 
-## Tools and Technologies
+## Tools Used
 
-- **Project Planning:** Miro, Canva  
-- **Data Processing and Analysis:** Databricks (SQL)  
-- **Data Visualization:** Microsoft Excel (Pivot Tables and Charts)  
-- **Presentation:** Google Slides  
+- Databricks (SQL) – data preparation and analysis  
+- Excel – pivot tables and visualizations  
+- Google Slides – presentation  
+- Miro, Canva – planning  
 
 ---
 
-## Project Timeline
+## Timeline
 
-This project was completed within one week:
-
-- Day 1–2: Data understanding and preparation  
-- Day 3: Data integration using SQL  
-- Day 4: Exploratory analysis  
-- Day 5–6: Visualization and insight development  
-- Day 7: Final presentation and reporting  
+Completed in 1 week:
+- Data preparation and joining  
+- Analysis and visualization  
+- Insight generation and presentation  
 
 ---
 
 ## Conclusion
 
-This analysis demonstrates the value of integrating demographic and behavioral data to better understand user engagement. The insights provide a foundation for targeted strategies to improve content performance, reduce user drop-off, and support sustainable growth in BrightTV’s subscriber base.
+Combining user and session data provided clear insight into when, how, and why users consume content. The findings highlight practical opportunities to improve engagement and support BrightTV’s subscription growth.
